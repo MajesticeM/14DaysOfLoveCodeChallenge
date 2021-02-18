@@ -164,11 +164,65 @@ namespace Csharp_Conditional_Statements
         public static void Question9() 
         {
             // Write a C# Sharp program to find the largest of three numbers
+            int num1, num2, num3;
+            Console.WriteLine("Please enter your first number");
+            num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please enter your second number");
+            num2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please enter your third number");
+            num3 = Convert.ToInt32(Console.ReadLine());
+
+            if (num1>num2)
+            {
+                if (num1>num3)
+                {
+                    Console.WriteLine(num1 + "is greater than the other numbers");
+                }
+            }
+            else if(num2>num1)
+            {
+                if (num2>num3)
+                {
+                    Console.WriteLine(num2 +" is greater than the other numbers");
+                }
+            }
+
+            else
+            {
+                Console.WriteLine(num3 + " is greater than the other numbers");
+            }
+
+            Console.ReadLine();
         }
 
         public static void Question10() 
         {
             //Write a C# Sharp program to accept a coordinate point in an XY coordinate system and determine in which quadrant the coordinate point lies.
+            double x;
+            double y;
+
+            Console.WriteLine("Please enter your x coordinate");
+            x = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Please enter your y coordinate");
+            y = Convert.ToDouble(Console.ReadLine());
+            if (x>0 && y>0)
+            {
+                Console.WriteLine("Your coordinate is in the second quadrant");
+            }
+            else if (x<0 && y>0)
+            {
+                Console.WriteLine("Your coordinate is in the first quadrant");
+            }
+            else if (x<0 && y<0)
+            {
+                Console.WriteLine("Your coordinate is in the third quadrant");
+            }
+            else if (x>0 && y<0)
+            {
+                Console.WriteLine("Your coordinate is in the fourth quadrant");
+            }
+
+            Console.ReadLine();
         }
 
         public static void Question11() 
