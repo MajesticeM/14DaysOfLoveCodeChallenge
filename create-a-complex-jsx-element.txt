@@ -1,0 +1,9 @@
+const JSX =<div>
+<h1>Days of the week</h1>
+ <p>Paragraph</p>
+<ul>
+  <li>Monday</li>
+  <li>Tuesday</li>
+    <li>Wednesday</li>
+</ul>
+</div>;
